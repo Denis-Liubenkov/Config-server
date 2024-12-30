@@ -23,6 +23,8 @@ dependencies {
     implementation("org.springframework.cloud:spring-cloud-config-server")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    implementation("org.postgresql:postgresql:42.7.4")
+
 }
 
 dependencyManagement {

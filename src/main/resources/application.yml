@@ -1,12 +1,20 @@
 spring:
   cloud:
-    openfeign:
-      client:
-        config:
-          default:
-            connectTimeout: 5000
-            readTimeout: 5000
-            loggerLevel: FULL
+    consul:
+      config:
+        enabled: true
+        host: localhost
+        port: 8500
+
+    config:
+      server:
+        git:
+          uri: https://github.com/Denis-Liubenkov/Config-server.git
+          clone-on-start: true
+          default-label: master
+  config:
+    import: 'optional:consul'
+
 logging:
   level:
     root: INFO
