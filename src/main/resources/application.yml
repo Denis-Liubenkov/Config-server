@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            connectTimeout: 5000
+            readTimeout: 5000
+            loggerLevel: FULL
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+server:
+  port: 8086
