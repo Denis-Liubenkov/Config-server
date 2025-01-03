@@ -1,12 +1,10 @@
-#spring:
-#  application:
-#    name: Order-service
-#  datasource:
-#    url: jdbc:postgresql://localhost:5432/Orders
-#    username: postgres
-#    password: root
-#    driver-class-name: org.postgresql.Driver
-#  cloud:
-#    consul:
-#      discovery:
-#        enabled: true
+spring:
+  application:
+    name: Order-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Orders
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+server:
+  port: 8083
