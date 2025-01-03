@@ -1,14 +1,12 @@
-server:
-  port: 8083
-spring:
-  application:
-    name: Order-service
-  datasource:
-    url: jdbc:postgresql://localhost:5432/Orders
-    driver-class-name: org.postgresql.Driver
-    username: postgres
-    password: password
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+#spring:
+#  application:
+#    name: Order-service
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/Orders
+#    username: postgres
+#    password: root
+#    driver-class-name: org.postgresql.Driver
+#  cloud:
+#    consul:
+#      discovery:
+#        enabled: true
