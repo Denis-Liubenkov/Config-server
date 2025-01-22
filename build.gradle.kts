@@ -20,11 +20,11 @@ repositories {
 extra["springCloudVersion"] = "2024.0.0"
 
 dependencies {
-    implementation("org.springframework.cloud:spring-cloud-config-server")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-actuator:3.4.1")
+    implementation("org.springframework.cloud:spring-cloud-config-server:4.2.0")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-    //implementation("org.springframework.cloud:spring-cloud-starter-consul-config:4.2.0")
-    implementation("org.postgresql:postgresql:42.7.4")
     implementation("org.springframework.cloud:spring-cloud-starter-consul-discovery:4.2.0")
 }
 

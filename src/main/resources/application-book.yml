@@ -1,8 +1,0 @@
-spring:
-  application:
-    name: books-service
-  data:
-     mongodb:
-        uri: mongodb://localhost:27017/Books
-server:
-  port: 8082
