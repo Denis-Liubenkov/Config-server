@@ -2,24 +2,24 @@ spring:
   application:
     name: Gateway-service
   cloud:
-      gateway:
-        routes:
-          - id: books-service
-            uri: http://localhost:8082
-            predicates:
-              - Path=/books/**
-          - id: User-service
-            uri: http://localhost:8081
-            predicates:
-              - Path=/users/**
-          - id: Order-service
-            uri: http://localhost:8083
-            predicates:
-              - Path=/orders/**
-          - id: Authentication
-            uri: http://localhost:8084
-            predicates:
-              - Path=/auth/**
+    gateway:
+      routes:
+        - id: books-service
+          uri: http://localhost:8082
+          predicates:
+            - Path=/books/**
+        - id: User-service
+          uri: http://localhost:8081
+          predicates:
+            - Path=/users/**
+        - id: Order-service
+          uri: http://localhost:8083
+          predicates:
+            - Path=/orders/**
+        - id: Authentication
+          uri: http://localhost:8084
+          predicates:
+            - Path=/auth/**
 
 
 

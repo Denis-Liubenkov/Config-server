@@ -1,7 +1,13 @@
 spring:
   application:
     name: books-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Books
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+
   data:
     mongodb:
-      uri: mongodb://localhost:27017/Library
+      uri: mongodb://localhost:27017/FileData
 
