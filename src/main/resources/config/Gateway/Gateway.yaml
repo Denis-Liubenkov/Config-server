@@ -1,23 +1,23 @@
 spring:
   application:
-    name: Gateway-service
+    name: Gateway
   cloud:
     gateway:
       routes:
         - id: books-service
-          uri: http://localhost:8082
+          uri: lb://books-service
           predicates:
             - Path=/books/**
         - id: User-service
-          uri: http://localhost:8081
+          uri: lb://User-service
           predicates:
             - Path=/users/**
         - id: Order-service
-          uri: http://localhost:8083
+          uri: lb://Order-service
           predicates:
             - Path=/orders/**
         - id: AuthenticationMs
-          uri: http://localhost:8084
+          uri: lb://AuthenticationMs
           predicates:
             - Path=/auth/**
 
